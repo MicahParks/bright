@@ -18,7 +18,7 @@ func main() {
 
 	var brightness *big.Float
 	var err error
-	const usage = "Argument must be a number between 0 and 100."
+	const usage = "Argument must be a number between 20 and 100."
 
 	if len(os.Args) == 1 {
 		brightness = big.NewFloat(1)
