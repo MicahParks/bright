@@ -65,7 +65,7 @@ func main() {
 	for _, display := range displayNames {
 		err = exec.Command("xrandr", "--output", display, "--brightness", brightness.String()).Run()
 		if err != nil {
-			logger.Fatalln("Failed to set brightness: %s", err.Error())
+			logger.Fatalf("Failed to set brightness: %s", err.Error())
 		}
 	}
 
